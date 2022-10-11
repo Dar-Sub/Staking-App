@@ -4,7 +4,7 @@ import banking from '../banking.jpeg'
 class Navbar extends Component {
     render() {
         return (
-            <nav className='navbar navbar-dark fixed-top shadow p-0' style={{backgroundColor:'Red', height:'50px'}}>
+            <nav className='navbar navbar-dark fixed-top shadow p-0' style={{backgroundColor:'Black', height:'50px'}}>
                 <a className='navbar-brand col-sm-3 col-md-2 mr-0'
                 style={{color:'white'}}>
                 <img src={banking} width='50' height='40' className='d-inline-block align-top' alt='bank'/>

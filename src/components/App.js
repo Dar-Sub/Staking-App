@@ -6,6 +6,7 @@ import Tether from '../truffle_abis/Tether.json'
 import Rwd from '../truffle_abis/RWD.json'
 import DecentralBank from '../truffle_abis/DecentralBank.json'
 import Main from './Main'
+import ParticleSettings from './ParticleSettings'
 
 
 class App extends Component {
@@ -106,7 +107,10 @@ class App extends Component {
 
     render() {
         return (
-            <div>
+            <div className='App' style={{position:'relative'}}>
+                <div style={{position:'absolute'}}>
+                <ParticleSettings />
+                </div>
                 <Navbar account={this.state.account}/>
                     <div className='container-fluid mt-5'>
                         <div className='row'>
