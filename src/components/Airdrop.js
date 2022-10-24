@@ -1,4 +1,3 @@
-import { Http2ServerRequest } from 'http2';
 import React, {Component} from 'react'
 
 class Airdrop extends Component {
@@ -17,18 +16,17 @@ class Airdrop extends Component {
         let hours, minutes, seconds
         hours = Math.floor(secs / (60 * 60))
 
-        let divisor_for_minutes = secs % (60 * 60)
-        minutes = Math.floor(divisor_for_minutes / 60)
+        let devisor_for_minutes = secs % (60 * 60)
+        minutes = Math.floor(devisor_for_minutes / 60)
 
-        let diviisor_for_seconds = divisor_for_minutes % 60
-        seconds = Math.ceil(diviisor_for_seconds)
+        let devisor_for_seconds = devisor_for_minutes % 60
+        seconds = Math.ceil(devisor_for_seconds)
 
         let obj = {
             'h':hours,
             'm':minutes,
             's':seconds
         }
-
         return obj
     }
 
@@ -39,7 +37,7 @@ class Airdrop extends Component {
 
     render() { 
         return (
-            <div style={{color:'black'}}>
+            <div style={{color: 'black'}}>
                 {this.state.time.m}:{this.state.time.s}
             </div>
         )
